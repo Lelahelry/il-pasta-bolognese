@@ -1,3 +1,12 @@
-.red{font-size:42px; color:crimson; font-family: Impact}
-.div1{border:10px dotted greenyellow; padding:4.6% }
-.div2{border:5px solid blue;}
+.centertext {
+    font-size: 42px;
+    color: crimson;
+    font-family: Impact
+}
+.div1 {
+    border: 10px dotted greenyellow;
+    padding: 4.6%
+}
+.div2 {
+    border: 5px solid blue;
+}

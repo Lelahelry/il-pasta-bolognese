@@ -1,13 +1,33 @@
-.centertext {
-	font-size: 42px;
-	color: crimson;
-	font-family: Impact;
+.container {
 }
-.div1 {
-	margin: 3%;
-	border: 10px dotted greenyellow;
-	padding: 4.6%;
+
+.active {
+	background-color: darkred;
 }
-.div2 {
-	border: 5px solid blue;
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li {
+	display: inline-block;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: rgb(75, 3, 3);
 }

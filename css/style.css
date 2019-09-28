@@ -1,8 +1,29 @@
 .container {
+	height: 47px;
 }
 
 .active {
 	background-color: darkred;
+}
+
+.flex-master-container {
+	flex-direction: column;
+	display: flex;
+	background-color: dodgerblue;
+	width: 700px;
+}
+
+.flex-child-container {
+	background-color: #f1f1f1;
+	margin: 20px;
+	padding: 20px;
+	font-size: 30px;
+}
+
+.flex-big-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: orange;
 }
 
 ul {

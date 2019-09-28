@@ -17,13 +17,25 @@
 				<a href="https://www.panzani.fr/">Panzani</a>
 			</div>
 		</div>
-		<form>
-			Sujet : <input type="text" name="sujet"><br/>
-			E-mail : <input type="email" name="email"><br/>
-			Prénom : <input type="text" name="firstname"><br/>
-			Nom : <input type="text" name="lastname"><br/>
-			Message :<br/>
-			<textarea name="message" rows="10" cols="30"></textarea>
-		</form>
+		<br/>
+		<div class="flex-container">
+			<div class="flex-master-container">
+				<form>
+					<div class="flex-form-container">
+						<div style="text-align: center">NOUS CONTACTER</div>
+						<hr class="emphasis-line"><br/>
+						<div class="flex-form-child-container">Sujet : <input type="text" name="sujet" placeholder="L'objet de votre requête" required></div><br/>
+						<div class="flex-form-child-container">E-mail : <input type="email" name="email" placeholder="exemple@bolognaise.com" required></div><br/>
+						<div class="flex-form-child-container">Prénom : <input type="text" name="firstname" placeholder="Votre petit nom" required></div><br/>
+						<div class="flex-form-child-container">Nom : <input type="text" name="lastname" placeholder="Votre patronyme" required></div><br/>
+						<div class="flex-form-child-container">Statut : <input type="text" name="status" placeholder="T'en es où dans la vie fréro ?"></div><br/>
+						<div class="flex-form-child-container">Ville : <input type="text" name="city" placeholder="Là ou t'habites" required></div><br/>
+						<div class="flex-form-child-container">Âge : <input type="number" name="age" placeholder="La date d'aujourd'hui moins la date de ta naissance, facile" required></div><br/>
+						<div class="flex-form-child-container">Message : <textarea name="message" rows="10" placeholder="Ce que vous voulez dire" required></textarea></div><br/>
+						<div style="text-align: center"><input type="submit" value="Envoyer"></div>
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

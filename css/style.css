@@ -1,7 +1,7 @@
-/* c'est pour spécifier le chemin de la police */
+/* C'est pour spécifier le chemin de la police */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-/* Pour la bolo en fond, et virer la marge qui pue */
+/* Pour la bolo en fond, virer la marge qui pue, et appliquer la police */
 body {
 	margin: 0;
 	background-image: url('../background.jpg');
@@ -103,7 +103,7 @@ pre {
 	padding: 12px;
 	box-sizing: border-box;
 	border: 2px solid rgb(55, 168, 27);
-	border-radius: 5px;
+	border-radius: 25px;
 	outline: none;
 	background-color: rgb(240, 231, 228);
 	resize: none;
@@ -220,6 +220,7 @@ pre {
 	background-color: rgba(117, 58, 9, 0.829);
 }
 
+/* Pour que les liens du menu déroulant soient surlignés quand ils sont ouverts */
 .dropdown-active {
 	background-color: rgb(224, 195, 161)
 }

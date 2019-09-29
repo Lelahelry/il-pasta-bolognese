@@ -224,3 +224,13 @@ pre {
 .dropdown-active {
 	background-color: rgb(224, 195, 161)
 }
+
+/* Pour que le lien surligné ait les bonnes bordures */
+.dropdown-active:first-child {
+	border-radius: 0px 10px 0px 0px;
+}
+
+/* Pour que le lien surligné ait les bonnes bordures */
+.dropdown-active:last-child {
+	border-radius: 0px 0px 10px 10px;
+}

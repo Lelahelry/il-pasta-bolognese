@@ -1,16 +1,29 @@
+/* c'est pour spécifier le chemin de la police */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Pour la bolo en fond, et virer la marge qui pue */
 body {
 	margin: 0;
 	background-image: url('../background.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	font-family: 'Raleway';
 }
 
+/* Dans les CVs, pour que le texte ssoit pareil partout */
+pre {
+	font: inherit;
+	margin: 0;
+}
+
+/* S'étale sur toute la page, sert à centrer */
 .flex-container {
 	display: flex;
 	justify-content: center;
 }
 
+/* Contient le contenu des pages */
 .flex-master-container {
 	flex-direction: column;
 	display: flex;
@@ -19,17 +32,20 @@ body {
 	border-radius: 11px;
 }
 
+/* Différentes parties des CVs */
 .flex-child-container {
 	margin: 20px;
 	padding: 20px;
 	font-size: 30px;
 }
 
+/* Header des CVs */
 .flex-head-container {
 	display: flex;
 	justify-content: space-between;
 }
 
+/* Contient les champs d'entrée */
 .flex-form-container {
 	display: flex;
 	flex-direction: column;
@@ -37,10 +53,12 @@ body {
 	padding: 13px;
 }
 
+/* Contient les champs d'entrée individuels */
 .flex-form-child-container {
 	display: contents;
 }
 
+/* Barre de navigation */
 .navbar {
 	display: flex;
 	background-color: rgb(44, 20, 1);
@@ -52,6 +70,7 @@ body {
 	overflow: auto;
 }
 
+/* Liens de la  navbar */
 .navbar a {
 	color: white;
 	text-align: center;
@@ -59,22 +78,17 @@ body {
 	text-decoration: none;
 }
 
+/* Les liens changent de couleur au survol */
 .navbar a:hover {
 	background-color: rgba(117, 58, 9, 0.829);
 }
 
-.navbar a:last-child {
-	float: right;
-}
-
-.active {
-	background-color: rgb(187, 5, 51);
-}
-
-.navbar-left-buttons {
+/* Amas de boutons à droite et à gauche de la navbar */
+.navbar-buttons {
 	display: flex;
 }
 
+/* Des jolies lignes vertes lol */
 .emphasis-line {
 	margin: 1px 0px;
 	border: 2px solid rgb(55, 168, 27);
@@ -83,6 +97,7 @@ body {
 	border-left: none;
 }
 
+/* Bah les champs de texte fréro */
 .input-field {
 	margin: 1px 0px;
 	padding: 12px;
@@ -92,17 +107,21 @@ body {
 	outline: none;
 	background-color: rgb(240, 231, 228);
 	resize: none;
+	font: inherit;
 }
 
+/* C'est rigolo, ça devient un peu plus foncé quand tu mets la souris dessus */
 .input-field:hover {
 	border: 2px solid rgb(8, 146, 8);
 }
 
+/* Quand tu clique dessus là ça devient carrément coloré ptdr */
 .input-field:focus {
 	border: 2px solid rgb(8, 146, 8);
 	background-color: rgb(207, 236, 203);
 }
 
+/* Pour envoyer les réponses */
 .input-button {
 	color: white;
 	background-color: rgb(44, 20, 1);
@@ -111,8 +130,96 @@ body {
 	padding: 14px 16px;
 	text-decoration: none;
 	cursor: pointer;
+	font: inherit;
 }
 
+/* lui aussi il se colore quand on passe dessus, ce caméléon */
 .input-button:hover {
 	background-color: rgba(117, 58, 9, 0.829);
+}
+
+/* Petite bordure verte autour du wiki, parce que je le peux */
+.wikipedia-embed {
+	margin: 13px;
+	border: 2px solid rgb(55, 168, 27);
+	border-radius: 13px;
+	height: 700px;
+}
+
+/* La même que tout à l'heure, ça fonce */
+.wikipedia-embed:hover {
+	border: 2px solid rgb(8, 146, 8);
+}
+
+/* Conteneur avec le bouton du menu déroulant et le menu déroulant dedans */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Conteneur avec le menu déroulant dedans */
+.dropdown-content {
+	display: none;
+	position: fixed;
+	background-color: rgb(240, 231, 228);
+	box-shadow: -6px 8px 20px 0px rgba(46, 18, 2, 0.8);
+	z-index: 1;
+	border-radius: 0px 10px 10px;
+}
+
+/* Bouton du menu déroulant */
+.dropdown-button {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	cursor: pointer;
+	background-color: rgb(44, 20, 1);
+}
+
+/*Bouton actif de la barre de navigation */
+.active {
+	background-color: rgb(187, 5, 51);
+}
+
+/* Quand tu survole le bouton du menu déroulant, il change de couleur */
+.dropdown:hover .dropdown-button {
+	background-color: rgba(117, 58, 9, 0.829);
+}
+
+/* Quand tu survole le bouton, le menu déroulant apparait */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Liens du menu déroulant */
+.dropdown-content a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Quand tu suvole les liens, ils changent de couleur */
+.dropdown-content a:hover {
+	background-color: rgba(55, 168, 27, 0.877);
+}
+
+/* Le premier lien du menu déroulant */
+.dropdown-content a:hover:first-child {
+	border-radius: 0px 10px 0px 0px;
+}
+
+/* Le dernier lien du menu déroulant */
+.dropdown-content a:hover:last-child {
+	border-radius: 0px 0px 10px 10px;
+}
+
+/* Quand tu survole le menu déroulant, son bouton reste surligné */
+.dropdown-content:hover .dropdown-button {
+	background-color: rgba(117, 58, 9, 0.829);
+}
+
+.dropdown-active {
+	background-color: rgb(224, 195, 161)
 }

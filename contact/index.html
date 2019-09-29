@@ -6,16 +6,25 @@
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
-		<div style="height: 46.4px">
-			<div class="navbar">
-				<div class="navbar-left-buttons">
+		<div style="height: 47.2px">
+			<nav class="navbar">
+				<div class="navbar-buttons">
 					<a href="../index.html">Accueil</a>
-					<a href="../html/dolphin_jotaro.html">Jotaro</a>
-					<a href="../curriculum-vitae/index.html">CV</a>
+					<a href="../bolognaise/index.html">La sauce bolognaise</a>
+					<div class="dropdown">
+						<div class="dropdown-button">CVs</div>
+						<div class="dropdown-content">
+							<a href="../curriculum-vitae/charly_hoarau.html">Charly Arthur HOARAU</a>
+							<a href="../curriculum-vitae/lelahel_hideux.html">Lélahel John Cédric Anthony HIDEUX</a>
+						</div>
+					</div>
 					<a class="active" href="index.html">Contact</a>
 				</div>
-				<a href="https://www.panzani.fr/">Panzani</a>
-			</div>
+				<div class="navbar-buttons">
+					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="../icons/SheerHeartAttack.png" alt="powerful stando bites za dusto" width="16px" height="16px" style="margin-right: 4px; vertical-align: middle">KOCHI WO MIRO</a>
+					<a href="https://www.panzani.fr/">Panzani</a>
+				</div>
+			</nav>
 		</div>
 		<br/>
 		<div class="flex-container">
@@ -32,7 +41,7 @@
 						<div class="flex-form-child-container"><b>Ville :</b><input class="input-field" type="text" name="city" placeholder="Là où t'habites" ></div><br/>
 						<div class="flex-form-child-container"><b>Âge :</b><input class="input-field" type="number" name="age" min="0" max="420" placeholder="(L'année en cours) - (L'année de ta naissance) : facile"></div><br/>
 						<div class="flex-form-child-container"><b>Message* :</b><textarea class="input-field" name="message" rows="10" placeholder="C'que tu veux dire" required></textarea></div>
-						<sup>Les champs marqués d'un * sont requis</sup><br/>
+						<i><sup>Les champs marqués d'une * sont requis</sup></i><br/>
 						<div style="text-align: center"><input class="input-button" type="submit" value="Envoyer"></div>
 					</div>
 				</form>

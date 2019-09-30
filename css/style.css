@@ -11,12 +11,6 @@ body {
 	font-family: 'Raleway';
 }
 
-/* Dans les CVs, pour que le texte ssoit pareil partout */
-pre {
-	font: inherit;
-	margin: 0;
-}
-
 /* S'étale sur toute la page, sert à centrer */
 .flex-container {
 	display: flex;

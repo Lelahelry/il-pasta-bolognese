@@ -11,6 +11,11 @@ body {
 	font-family: 'Raleway';
 }
 
+/* Pour virer la marge du bas dans les listes des CVs, elle est en trop */
+ul {
+	margin-bottom: 0;
+}
+
 /* S'étale sur toute la page, sert à centrer */
 .flex-container {
 	display: flex;
